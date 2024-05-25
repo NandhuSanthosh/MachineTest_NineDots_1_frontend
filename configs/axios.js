@@ -1,7 +1,9 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-    baseURL: 'https://drive.nandhu.shop',
+    baseURL: 'https://drive.nandhu.xyz',
+    headers: { "Content-Type": "application/json" },
+    withCredentials: true
 });
 
 export default axiosInstance
