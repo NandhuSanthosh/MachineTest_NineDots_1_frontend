@@ -67,7 +67,7 @@ const Files = ({data}) => {
                             <div>
                                 {
                                     isImage(file.name) ?   
-                                        <Image alt='image' className='rounded-md' src={"http://localhost:4000/uploads/" + file.fileName} width={"300"} height={"50"}/>
+                                        <Image alt='image' className='rounded-md' src={file.fileName} width={"300"} height={"50"}/>
                                     : 
                                         <Image alt='image' className='rounded-md' src={"/pdfLogo.png"} width={"300"} height={"50"}/>
 
