@@ -2,7 +2,7 @@ import axios from "axios";
 
 const axiosInstance = axios.create({
     // baseURL: 'https://drive.nandhu.xyz',
-    baseURL: "http://localhost:4000",
+    baseURL: "https://drive.nandhu.xyz/",
     // headers: { "Content-Type": "application/json" },
     withCredentials: true
 });
