@@ -98,11 +98,13 @@ const FileUploadModal = ({setFilesHandler}) => {
             // Set up the headers for the request
             const headers = { 'Content-Type': 'application/octet-stream' };
             const url = 'https://drive.nandhu.xyz/upload?' + params.toString()
+            // const url = "http://localhost:4000/upload?" + params.toString()
       
             fetch(url, {
               method: 'POST',
               headers: headers,
-              body: data
+              body: data, 
+              credentials: 'include'
             }).then(response => response.json()) 
               .then(res => {
                     console.log(res)
