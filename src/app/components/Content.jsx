@@ -41,8 +41,8 @@ const Content = ({id}) => {
 
     return (
       <div className='p-3 flex-1 overflow-y-scroll'>
-          <div className='rounded-md h-full bg-white shadow-md p-7'>
-            <div className='h-full'>
+          <div className='rounded-md bg-white shadow-md p-7'>
+            <div style={{minHeight: "850px"}}>
               {
                 curr ?
                   <>
